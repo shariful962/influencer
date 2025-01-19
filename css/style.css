@@ -202,6 +202,30 @@ main {
 .feature-right-content {
     max-width: 610px;
 }
+.feature-right-content .feature-title {
+    margin-bottom: 16px;
+    font-size: 2.375rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+.feature-right-content .feature-desc {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+.feature-right-content .feature-btn {
+    border-radius: 0;
+}
+.feature-right-content .feature-btn i {
+    margin-left: 5px;
+}
+
+
+
+
+
+
 /* media query  */
 @media screen and (max-width: 768px){
      .wrapper {
@@ -228,6 +252,15 @@ main {
    .collection-btn {
     margin: 12px 35px 0 0;
     text-align: center;
+    }
+
+    /* feature design  */
+    .feature-content {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .feature-right-content {
+        text-align: center;
     }
    
 }
