@@ -14,8 +14,12 @@ body {
     background-color: #FFFFFF;
     font-family: "Poppins", serif;
 }
-/* common style  */
 
+/* common style  */
+main {
+    max-width: 1110px;
+    margin: 0 auto;
+}
 .btn {
     background-color: #E02C6D;
     color: white;
@@ -118,6 +122,70 @@ body {
     
 }
 
+/* collection section design */
+.collection {
+    margin: 100px 0;
+}
+.collection-title {
+    margin-bottom: 24px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.collection-item {
+	grid-template-columns: repeat(3, 329px);
+	grid-gap: 30px;
+	justify-content: center;
+    position: relative;
+}
+.collection-item .item-card {
+    /* width: 329px; */
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 12px 15px;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+}
+.collection-item .item-card img {
+    width: 100%;
+}
+.item-card .item-title {
+    margin-top: 16px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+}
+.item-card .item-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000DE;
+}
+.item-card .item-rating i {
+    color: #FB8200;
+}
+.item-card .item-rating span {
+    margin-left: 5px;
+}
+.item-card .item-desc {
+    margin: 10px 0 5px 0;
+    max-width: 210px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #787885;
+
+}
+.collection-btn {
+    margin: 12px 35px 0 0;
+    text-align: right;
+}
+.collection-btn a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #E02C6DDE;
+}
+.collection-btn i {
+    margin-left: 5px;
+}
 /* media query  */
 @media screen and (max-width: 768px){
      .wrapper {
@@ -136,6 +204,35 @@ body {
    .banner-left-content {
     text-align: center;
    }
- 
+
+   /* collection design section  */
+   .collection-item {
+    grid-template-columns: repeat(1, 329px);
+   }
+   .collection-btn {
+    margin: 12px 35px 0 0;
+    text-align: center;
+    }
    
 }
+
+
+ /* @media screen and (max-width: 991px){
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .banner-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .collection-item {
+        grid-template-columns: repeat(2, 329px);
+    }
+
+    .collection-btn {
+        margin: 12px 35px 0 0;
+        text-align: center;
+    }
+}  */
