@@ -223,10 +223,40 @@ main {
 
 /* footer section design  */
 footer {
-    height: 150px;
     background-color: #0A0826;
+    color: #FFFFFF;
+    padding: 15px 0;
 }
+.footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+.footer-header {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.footer-title,
+.footer-desc {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.icon-box {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255,255, .1);
+    border-radius: 50%;
+    margin-right: 24px;
+}
+.icon-box i {
+    font-size: 1.5rem;
+}
 
 
 
