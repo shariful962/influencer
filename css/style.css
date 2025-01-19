@@ -186,6 +186,22 @@ main {
 .collection-btn i {
     margin-left: 5px;
 }
+
+/* feature design section  */
+
+.feature {
+    margin: 100px 0;
+}
+.feature-content {
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-left-content img {
+    width: 100%;
+}
+.feature-right-content {
+    max-width: 610px;
+}
 /* media query  */
 @media screen and (max-width: 768px){
      .wrapper {
